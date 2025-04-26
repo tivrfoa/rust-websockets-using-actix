@@ -1,0 +1,12 @@
+**How to Run:**
+
+1.  Make sure you have Rust installed (`rustup`).
+2.  Create the directory structure and save the files.
+3.  Navigate to the `chat-app` directory in your terminal.
+4.  Build the project: `cargo build`
+5.  Run the server: `cargo run` (or set `RUST_LOG=trace` for more detailed logs: `RUST_LOG=trace cargo run`)
+6.  Open your web browser and go to `http://127.0.0.1:8080`.
+7.  Log in with `alice`/`password123` or `bob`/`securepass`.
+8.  You'll be redirected to `chat.html`, and the WebSocket connection will be established.
+9.  Open another browser tab/window, go to the same address, and log in as the *other* user.
+10. Send messages between the two windows. Check the server console logs to see the sender/receiver IP/name logging for each message.
